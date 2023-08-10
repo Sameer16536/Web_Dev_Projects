@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathe Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* CSS Reset */
+    body {
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Raleway', sans-serif;
+
+    }
+
+    .left {
+        display: inline-block;
+       
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        border-radius: 50px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 10px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        
+
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar ul {
+        overflow: auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: antiquewhite;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a.active,
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: antiquewhite;
+        padding: 13px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        border-color: rgb(160, 157, 151);
+    }
+
+    .btn:hover {
+        background-color: rgb(46, 44, 44);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 60px 43px;
+        padding: 134px 97px;
+        width: 48%;
+        border-radius: 28px;
+      
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 276px;
+        padding: 13px;
+        border: 2px solid white;
+        margin: 18px auto;
+        border-radius: 15px;
+
+    }
+
+    .SP {
+        text-align: center;
+        padding: 23px;
+        width: 97%;
+        margin: auto;
+    }
+
+    #B1 {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+    .container h1{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box  for  Logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="Logo">
+            <div>Marathe Fitness</div>
+        </div>
+        <!-- Mid Box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right  Box for  Buttons -->
+        <div class="right">
+            <button class="btn">Email Us</button><button class="btn">Feedback</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best GYM in Ghatkopar</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email ID">
+            </div>
+            <div class="SP">
+                Select Plan : 1 Month<input type="Radio" name="Select plan">
+                3 Months<input type="Radio" name="Select plan">
+                6 Months<input type="Radio" name="Select plan">
+                1 Year<input type="Radio" name="Select plan">
+            </div>
+            <div>
+                <button class="btn" id="B1">Submit</button>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    </form>
+    </div>
+</body>
+
+</html>
